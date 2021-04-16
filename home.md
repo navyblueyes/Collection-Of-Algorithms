@@ -4,4 +4,8 @@ This is a collection of algorithm challenges I came across. There is no order ot
 
 ### First set
 
-[First Problem](https://github.com/navyblueyes/Collection-Of-Algorithms/blob/master/prob1/)
+[First Problem](https://github.com/navyblueyes/Collection-Of-Algorithms/blob/master/prob001/) -- Minimizing Sorted Arrays
+
+### Second
+
+[First Problem](https://github.com/navyblueyes/Collection-Of-Algorithms/blob/master/prob002/) -- Adding an unlimited number of parameters
