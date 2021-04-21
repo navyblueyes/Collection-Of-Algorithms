@@ -13,3 +13,7 @@ function twoDigitAddition(input: number): number {
   let secondInt = parseInt(medium[1], 10)
   return firstInt + secondInt
 }
+
+console.log(twoDigitAddition(26))
+console.log(twoDigitAddition(78))
+console.log(twoDigitAddition(82))

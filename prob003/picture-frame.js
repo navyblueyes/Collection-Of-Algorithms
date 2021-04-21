@@ -24,27 +24,3 @@ function asteriskPictureFrame(picture) {
     return picture;
 }
 console.log(asteriskPictureFrame(["asd", "add"]));
-/*
-function asteriskPictureFrame(picture: string[]): string[] {
-  // create top / bottom array
-  const topBorderWidth: number = picture[0].length + 2
-  let topBorder: string = ""
-
-  for (let i = 0; i < topBorderWidth; i++) {
-    topBorder = topBorder.concat("*")
-  }
-
-  // add top / bottom array to picture
-  picture.unshift(topBorder)
-  picture.push(topBorder)
-
-  // adding * at start and end of each layer
-  for (let i = 1; i < picture.length - 1; i++) {
-    picture[i] = "*".concat(picture[i], "*")
-  }
-
-  return picture
-}
-
-console.log(asteriskPictureFrame(["asd", "add"]))
-*/
