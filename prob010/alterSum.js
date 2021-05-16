@@ -6,7 +6,7 @@ console.log("hellow");
 function alterSum(arr) {
     var sum1 = 0;
     var sum2 = 0;
-    for (var i = 0; i < arr.length; i + 2) {
+    for (var i = 0; i < arr.length; i = i + 2) {
         sum1 = sum1 + arr[i];
         sum2 = sum2 + arr[i + 1];
     }
