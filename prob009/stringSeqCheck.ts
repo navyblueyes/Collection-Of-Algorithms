@@ -1,10 +1,32 @@
 // given a string
 // compare individual letters to see if sequential
 
-function stringSeqCheck(str1: string, str2: string): boolean {
-  stringArray1 = str1.split("")
-  stringArray2 = str2.split("")
+function stringSeqCheck(str1: string): boolean {
+  const stringArray1: string[] = str1.split("")
+  const charValues: number[] = []
+
+  // store character codes in charValues
+  stringArray1.forEach((stringChar: string) => {
+    charValues.push(stringChar.charCodeAt(0))
+  })
+
+  // check for duplicates
+  if (new Set(charValues).size !== charValues.length) {
+    return false
+  }
+
+  for (let i = 0; i < charValues.length - 1; i++) {
+    if (charValues[i] >= charValues[i + 1]) {
+      return false
+    }
+  }
+
+  return true
 }
+
+console.log(stringSeqCheck("asdf"))
+console.log(stringSeqCheck("adfs"))
+console.log(stringSeqCheck("adfffs"))
 
 // const alphabet = {
 //   a: "b",
