@@ -7,13 +7,12 @@ function equallyStrong(
   friendLeft: number,
   friendRight: number
 ): boolean {
-  let you = yourLeft + yourRight
-  let friend = friendLeft + friendRight
-  if (you === friend) {
-    return true
-  } else {
-    return false
-  }
+  const yourWeakest = yourLeft <= yourRight ? yourRight : yourLeft
+  const yourStrongest = yourLeft <= yourRight ? yourLeft : yourRight
+  const friendWeakest = friendLeft <= friendRight ? friendRight : friendLeft
+  const friendStrongest = friendLeft <= friendRight ? friendLeft : friendRight
+
+  return yourStrongest === friendStrongest && yourWeakest === friendWeakest
 }
 
 console.log(equallyStrong(10, 15, 15, 10))
