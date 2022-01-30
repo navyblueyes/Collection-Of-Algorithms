@@ -4,6 +4,7 @@
   "description": "Collection of Algorithm Challenges",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest --watch",
     "testFile": "jest -- --testNamePattern --watch"
   },
