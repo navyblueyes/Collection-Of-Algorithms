@@ -16,8 +16,11 @@ function boxBlur(image: number[][]): number[][] {
           count++;
         }
       }
+      line.push(Math.floor(sum / count));
     }
+    res.push(line);
   }
+  console.log(res);
   return res;
 }
 
