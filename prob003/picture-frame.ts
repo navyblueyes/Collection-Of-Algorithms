@@ -6,7 +6,7 @@
 //
 //
 
-function asteriskPictureFrame(picture: string[]): string[] {
+export function asteriskPictureFrame(picture: string[]): string[] {
   // find topborderlength
   const topBorderLength: number = picture.length + 2
 
@@ -30,5 +30,3 @@ function asteriskPictureFrame(picture: string[]): string[] {
 
   return picture
 }
-
-console.log(asteriskPictureFrame(["asd", "add"]))

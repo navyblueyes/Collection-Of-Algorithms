@@ -8,7 +8,7 @@
 //    [1, 6, 7] -- 14
 //    [5,  6,  7,  8] -- 26
 
-function add(...param1: number[]): number {
+export function add(...param1: number[]): number {
   let total = 0;
 
   param1.forEach((num) => {
@@ -17,6 +17,3 @@ function add(...param1: number[]): number {
 
   return total;
 }
-
-console.log(add(4, 7, 8));
-console.log(add(5, 6, 7, 8));

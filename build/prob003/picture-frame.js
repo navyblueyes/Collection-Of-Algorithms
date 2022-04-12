@@ -6,14 +6,14 @@
 //
 //
 //
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.asteriskPictureFrame = void 0;
 function asteriskPictureFrame(picture) {
     // find topborderlength
-    var topBorderLength = picture.length + 2;
+    const topBorderLength = picture.length + 2;
     // variablize topborder
-    var topBorder = "";
-    for (var i = 0; i < topBorderLength; i++) {
+    let topBorder = "";
+    for (let i = 0; i < topBorderLength; i++) {
         topBorder = topBorder.concat("*");
     }
     //["*".repeat(topBorderLength)]
@@ -21,9 +21,10 @@ function asteriskPictureFrame(picture) {
     picture.unshift(topBorder);
     picture.push(topBorder);
     // add * to start and end of each line
-    for (var i = 1; i < picture.length - 1; i++) {
+    for (let i = 1; i < picture.length - 1; i++) {
         picture[i] = "*".concat(picture[i], "*");
     }
     return picture;
 }
 exports.asteriskPictureFrame = asteriskPictureFrame;
+//# sourceMappingURL=picture-frame.js.map
