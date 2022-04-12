@@ -6,12 +6,12 @@
 //
 //
 
-export function asteriskPictureFrame(picture: string[]): string[] {
+export default function asteriskPictureFrame(picture: string[]): string[] {
   // find topborderlength
-  const topBorderLength: number = picture.length + 2
+  const topBorderLength: number = picture[0].length + 2;
 
   // variablize topborder
-  let topBorder: string = ""
+  let topBorder: string = "";
 
   for (let i = 0; i < topBorderLength; i++) {
     topBorder = topBorder.concat("*")
