@@ -1,5 +1,4 @@
-import { isExportDeclaration } from "typescript";
-import arrayMinimization from "./index";
+import { arrayMinimization } from "./index";
 
 describe(arrayMinimization.name, () => {
   it("test 1", () => {
