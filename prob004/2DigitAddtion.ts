@@ -4,7 +4,7 @@
 
 // plan -- split ...parse into string... reassign to values ... add
 
-function twoDigitAddition(input: number): number {
+export default function twoDigitAddition(input: number): number {
   if (input < 10 || input > 99) {
     Error("input needs to be between 10 and 99")
   }
