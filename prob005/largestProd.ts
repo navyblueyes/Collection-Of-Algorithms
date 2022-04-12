@@ -1,13 +1,13 @@
 // Explanation ---
 //    takes input array of numbers
-//    finds the largets product of two numbers
+//    finds the largest product of two numbers
 
 // Plan
 //    check input for less than 1 input
 //    for loop...
 //    check for negative and break
 
-function largestProduct(inputArray: number[]): number {
+export default function largestProduct(inputArray: number[]): number {
   if (inputArray.length <= 1) {
     Error("Input must be an array of two or more integers")
   }
@@ -21,4 +21,3 @@ function largestProduct(inputArray: number[]): number {
   }
   return bestProduct
 }
-console.log(largestProduct([2, 5, 7, 8, 12, 23]))
