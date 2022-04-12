@@ -10,6 +10,8 @@
 
 export function arrayMinimization(a: number[]): number {
   const isEven = a.length % 2 === 0;
+  const half = (a.length / 2)-1;
 
-  return isEven ? a[a.length / 2 - 1] : a[Math.floor(a.length / 2)];
+  return isEven ? a[half] : a[Math.floor(half)];
+  // 4,7,8,9 ... is even... 4/2-->2... a[2]
 }
