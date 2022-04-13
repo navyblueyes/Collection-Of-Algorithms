@@ -3,8 +3,8 @@
 //
 //
 
-function candy(n: number, m: number): number {
+export default function candy(n: number, m: number): number {
   return Math.floor(m / n) * n;
 }
 
-console.log(candy(3, 10));
+console.log(candy(3, 10)); //9
