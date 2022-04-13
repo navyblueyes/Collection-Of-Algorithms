@@ -3,7 +3,7 @@
 
 // need to shift to array
 
-function alphaShift(inputString: string): string {
+export default function alphaShift(inputString: string): string {
   const alphabet: string[] = [
     "a",
     "b",
@@ -45,4 +45,4 @@ function alphaShift(inputString: string): string {
   return newStringArr.join("")
 }
 
-console.log(alphaShift("crazy"))
+// console.log(alphaShift("crazy")) //dsbzz
