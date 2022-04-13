@@ -7,7 +7,7 @@
 
 // example --> 10 2 should return 7
 
-function opposingRingNumber(
+export function opposingRingNumber(
   totalRingNumbers: number,
   startingNumber: number
 ): number {
