@@ -1,6 +1,6 @@
 // given an array of strings, return another array contraining allof the longests string
 
-function allLongestStrings(inputArray: string[]): string[] {
+export default function allLongestStrings(inputArray: string[]): string[] {
   let longestLength = 0;
   const longestWords:string[] = [];
 
@@ -16,5 +16,3 @@ function allLongestStrings(inputArray: string[]): string[] {
 
   return longestWords;
 }
-
-console.log(allLongestStrings(["asdf", "asd", "dsa", "weqr"]))
