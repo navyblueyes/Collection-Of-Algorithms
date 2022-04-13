@@ -1,7 +1,7 @@
 // given a string
 // compare individual letters to see if sequential
 
-function stringSeqCheck(str1: string): boolean {
+export default function stringSeqCheck(str1: string): boolean {
   const stringArray1: string[] = str1.split("")
   const charValues: number[] = []
 
@@ -24,9 +24,6 @@ function stringSeqCheck(str1: string): boolean {
   return true
 }
 
-console.log(stringSeqCheck("asdf"))
-console.log(stringSeqCheck("adfs"))
-console.log(stringSeqCheck("adfffs"))
 
 // const alphabet = {
 //   a: "b",
