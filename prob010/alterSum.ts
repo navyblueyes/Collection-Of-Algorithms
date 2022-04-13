@@ -3,7 +3,7 @@
 //      first integer -- total sum of odd index
 //      second integer -- total sum of even index
 
-function alterSum(arr: number[]): number[] {
+export default function alterSum(arr: number[]): number[] {
   let sum1: number = 0
   let sum2: number = 0
   for (let i = 0; i < arr.length; i = i + 2) {
@@ -12,5 +12,3 @@ function alterSum(arr: number[]): number[] {
   }
   return [sum1, sum2]
 }
-
-console.log(alterSum([54, 45, 84, 74, 78, 84]))
