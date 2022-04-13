@@ -4,7 +4,7 @@
 //   palindromeCheck('aabaa') -> true
 //   palindromeCheck('aabac') -> false
 //   palindromeCheck('a') -> true
-function palindromeCheck(input: string): Boolean {
+export function palindromeCheck(input: string): Boolean {
   let original = input.toLowerCase();
   let reversed = original.split("").reverse().join("");
   return original === reversed;
