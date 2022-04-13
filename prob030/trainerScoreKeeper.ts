@@ -5,7 +5,7 @@
 // example -->  [[4,1],[4,-1],[0,0],[6,1]] --> 5.0   [4,1] [6,1] are the only ones counted
 // example -->  [[3,-1],[0,0],[4,-1]] --> 0.0
 
-function trainerScorekeeper(inputArray: number[][]): number {
+export function trainerScorekeeper(inputArray: number[][]): number {
   let totalScore = 0;
   let totalQuestions = 0;
 
