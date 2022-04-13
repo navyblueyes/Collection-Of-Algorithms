@@ -16,12 +16,12 @@ function charlist(chars: string[]): object {
   return wordCount;
 }
 
-function findCommonChar(input1: string, input2: string): number {
+export function findCommonChar(input1: string, input2: string): number {
   const chars1: string[] = input1.split("");
   const chars2: string[] = input2.split("");
 
-  const s1CharCount = charlist(chars1);
-  const s2CharCount = charlist(chars2);
+  const s1CharCount:object = charlist(chars1);
+  const s2CharCount:object = charlist(chars2);
   let total = 0;
 
   for (const prop in s1CharCount) {
@@ -37,4 +37,4 @@ function findCommonChar(input1: string, input2: string): number {
   return total;
 }
 
-console.log(findCommonChar(`aabcc`, `adcaa`));
+console.log(findCommonChar(`aabcc`, `adcaa`)); //3
