@@ -1,4 +1,3 @@
-
 import equallyStrong from "./equallyStrong";
 
 describe("Testing Problem 011...", () => {
