@@ -3,7 +3,7 @@
 // restricted to a set length of jump
 // goal --> return integer that represents minimal set length of jump to avoid obstacles
 
-function avoidObstacles(inputArray: number[]): number {
+export default function avoidObstacles(inputArray: number[]): number {
   inputArray = inputArray.sort((a, b) => a - b);
   const largestArrayVal = inputArray[inputArray.length - 1];
 
@@ -14,4 +14,4 @@ function avoidObstacles(inputArray: number[]): number {
   }
 }
 
-console.log(avoidObstacles([5, 3, 6, 7, 9]));
+console.log(avoidObstacles([5, 3, 6, 7, 9])); //4
