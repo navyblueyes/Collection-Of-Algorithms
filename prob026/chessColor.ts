@@ -5,7 +5,7 @@
 // example --> c3 a1 should return true
 //         --> a1 b1 should return false
 
-function checkBoardPosition(firstInput: string, secondInput: string): Boolean {
+export function checkBoardPosition(firstInput: string, secondInput: string): Boolean {
   interface objectBoard {
     [key: string]: number;
   }
@@ -26,5 +26,5 @@ function checkBoardPosition(firstInput: string, secondInput: string): Boolean {
   return board1 % 2 === board2 % 2;
 }
 
-console.log(checkBoardPosition("a1", "c3"));
-console.log(checkBoardPosition("a1", "b1"));
+console.log(checkBoardPosition("a1", "c3")); //true
+console.log(checkBoardPosition("a1", "b1")); //false
