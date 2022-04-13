@@ -3,7 +3,7 @@
 // example
 // [1,2,1], 1 ,3 ... generates.... [3,2,3]
 
-function arrayElemReplace(
+export default function arrayElemReplace(
   inputArray: number[],
   elemToReplace: number,
   substitutionElem: number
@@ -16,4 +16,4 @@ function arrayElemReplace(
   return inputArray;
 }
 
-console.log(arrayElemReplace([1, 2, 1], 1, 3));
+console.log(arrayElemReplace([1, 2, 1], 1, 3)); // [3,2,3]
