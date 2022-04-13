@@ -2,7 +2,7 @@
 //   each change causes element to increase by one
 //
 
-function arrayChange(inputArray: number[]): number {
+export default function arrayChange(inputArray: number[]): number {
 
   let count = 0;
 
@@ -15,4 +15,3 @@ function arrayChange(inputArray: number[]): number {
   }
   return count;
 }
-console.log(arrayChange([1, 1, 1])); // should return 3.... 1 for middle element, 2 for end element
