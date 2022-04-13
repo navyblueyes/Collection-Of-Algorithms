@@ -7,6 +7,6 @@ describe("Problem 006 testing...", () => {
 
     //expect two outputs
     console.log(test1);
-    expect(test1).toBe(["asdf"]);
+    expect(test1).toContain(["asdf"]);
   });
 })

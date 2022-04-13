@@ -1,7 +1,7 @@
 // given strength of each arm of a person
 // compare two people if people are equally strong
 
-function equallyStrong(
+export default function equallyStrong(
   yourLeft: number,
   yourRight: number,
   friendLeft: number,
@@ -14,7 +14,3 @@ function equallyStrong(
 
   return yourStrongest === friendStrongest && yourWeakest === friendWeakest
 }
-
-console.log(equallyStrong(10, 15, 15, 10))
-console.log(equallyStrong(15, 10, 15, 10))
-console.log(equallyStrong(15, 10, 15, 9))
