@@ -10,7 +10,7 @@
 //   3 <= array.length <= 15
 //   1 <= array[i] <= 200
 
-function arrayPrevLess(items: number[]): number[] {
+export default function arrayPrevLess(items: number[]): number[] {
   let temp = [...items];
   temp[0] = -1;
   for (let i = 1; i < items.length; i++) {
@@ -24,5 +24,3 @@ function arrayPrevLess(items: number[]): number[] {
   }
   return temp;
 }
-
-console.log(arrayPrevLess([3, 5, 2, 4, 5]));
