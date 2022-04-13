@@ -2,7 +2,7 @@
 
 // [2, 4, 1, 0] should return 3
 
-function arrayMaximalAdjDifference(inputArray: number[]): number {
+export default function arrayMaximalAdjDifference(inputArray: number[]): number {
   let startDiff = 0;
   let maxDiff = 0;
 
