@@ -7,7 +7,7 @@
 
 // will assume max sum to be 8
 
-function arrayMaxConsecutiveSum(inputArray: number[], k: number): number {
+export default function arrayMaxConsecutiveSum(inputArray: number[], k: number): number {
   let firstSum = 0;
   let max = 0;
 
@@ -29,5 +29,3 @@ function arrayMaxConsecutiveSum(inputArray: number[], k: number): number {
 
   return max;
 }
-
-console.log(arrayMaxConsecutiveSum([2, 3, 5, 1, 6], 2));
