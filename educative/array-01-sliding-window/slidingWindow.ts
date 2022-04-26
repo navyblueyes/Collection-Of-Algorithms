@@ -21,7 +21,7 @@ function findMaxSlidingWindow(nums: Array<number>, windowSize: number) {
   }
 
   // push the initial result onto results
-  result.push([slidingWindow[0]])
+  result.push(slidingWindow[0])
 
 
 
