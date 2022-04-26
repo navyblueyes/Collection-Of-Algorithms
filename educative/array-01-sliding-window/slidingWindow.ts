@@ -1,7 +1,7 @@
 // Given an integer array and a window of size `w`, find the current maximum value in the window as it slides through the entire array.
 
 // sample input
-//    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//    nums = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 //    window_size = 3
 
 // expected output
@@ -10,19 +10,18 @@
 
 function findMaxSlidingWindow(nums: Array<number>, windowSize: number) {
   var result: Array<number> = [];
-  var slidingWindow: Array<number> = [nums[0]];
-
+  var slidingWindow: Array<number> = [];
 
   // filling up the slidingWindow
-  for (let i: number = 1; i < windowSize; i++) {
-    while (nums[i] >= nums[slidingWindow[slidingWindow.length - 1]]) {
+  for (let i: number = 0; i < windowSize; i++) {
+    while (slidingWindow.length >0 && nums[i] >= nums[slidingWindow[slidingWindow.length - 1]]) {
       slidingWindow.pop()
     }
-    slidingWindow.push()
+    slidingWindow.push(i)
   }
 
   // push the initial result onto results
-  result.push(nums[slidingWindow[0]])
+  result.push([slidingWindow[0]])
 
 
 
